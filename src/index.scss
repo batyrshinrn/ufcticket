@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    
+    & > #root {
+        height: 100vh;
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+    margin-top: 100px;
+    order: 2;
+
+    &.fade-enter-active {
+        opacity: 1;
+        margin-top: 0;
+        transition: all 300ms linear 400ms;
+        transition-property: opacity, margin-top;
+    }
+}
+
+.fade-exit {
+    margin: 0;
+    order: 1;
+
+    &.fade-exit-active {
+        margin-top: -100vh;
+        transition: margin 500ms ease-in;
+    }
+
+    &.fade-exit-done {
+        display: none;
+    }
+}

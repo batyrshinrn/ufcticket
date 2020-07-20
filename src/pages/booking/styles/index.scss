@@ -1,0 +1,80 @@
+.arena-enter {
+    margin-top: 0;
+}
+
+.arena-enter-active, .arena-enter-done {
+    margin-top: -605px;
+}
+
+.arena-enter-active {    
+    transition: margin-top 500ms;
+}
+
+.arena-exit {
+    margin-top: -605px;
+}
+
+.arena-exit-active, .arena-exit-done {
+    margin-top: 0;
+}
+
+.arena-exit-active {
+    transition: margin-top 500ms;
+}
+
+.backlink-enter {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.backlink-enter-active, .backlink-enter-done {
+    visibility: visible;
+    opacity: 1;
+}
+
+.backlink-enter-active {    
+    transition: opacity 500ms;
+}
+
+.backlink-exit-done {
+    visibility: hidden;
+}
+
+.backlink-exit-active, .backlink-exit-done {
+    opacity: 0;
+}
+
+.backlink-exit-active {
+    transition: opacity 500ms;
+}
+
+// 
+.seats-enter {
+    > .seats-inner {
+        opacity: 0;
+        top: 200px;
+    }
+}
+
+.seats-enter-done {
+    overflow: auto;
+    > .seats-inner {
+        opacity: 1;
+    }
+}
+
+.seats-enter-active {    
+    > .seats-inner {
+        opacity: 1;
+        top: 0;
+        transition: top 500ms ease-out 500ms, opacity 500ms ease-out 500ms;
+    }
+}
+
+.seats-exit-active, .seats-exit-done {
+    opacity: 0;
+}
+
+.seats-exit-active {
+    transition: opacity 500ms;
+}

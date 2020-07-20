@@ -1,0 +1,43 @@
+.order-enter {
+    margin-right: -300px;
+
+    .order-content {
+        margin-right: -600px;  
+      }
+}
+
+.order-enter-active, .order-enter-done {
+    margin-right: 0;
+
+    .order-content {
+      margin-right: 0;  
+    }
+}
+
+.order-enter-active {    
+    transition: margin-right 500ms;
+
+    .order-content {
+        transition: margin-right 300ms 400ms;  
+    }
+}
+
+.order-exit {
+    margin-right: 0;
+}
+
+.order-exit-active, .order-exit-done {
+    margin-right: -300px;
+
+    .order-content {
+        margin-right: -600px;
+    }
+}
+
+.order-exit-active {
+    transition: margin-right 500ms;
+
+    .order-content {
+        transition: margin-right 500ms;  
+    }
+}

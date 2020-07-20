@@ -1,0 +1,17 @@
+{
+    "Name": "GlobalPackageRollout",
+    "Values": {
+        "TargetPackage": "1308cf86-07d1-4e2e-b88f-4e7e53ff7fdb",
+        "AutoSwitchToDefaultRuntimePackage": "True",
+        "ReImportSettings": "True",
+        "IsSafeRollout": "True",
+        "SafeRolloutStrategy": "SafeRolloutBySeverityAndSize",
+        "FirstBatchSeverity": "304",
+        "FirstBatchSize": "10",
+        "RolloutToAllTime": "2018-11-30T00:36:18.687Z"
+    },
+    "Priority": 5,
+    "RequiredCheckpointType": {
+        "Value": "PreTaskStart|OnTaskError"
+    }
+}
