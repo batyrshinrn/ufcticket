@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SeatType } from '../../model/SeatTypeEnum';
 
 
-interface ISeatProps {
+export interface ISeatProps {
     xAxis: number,
     yAxis: number,
     seatType: SeatType,
